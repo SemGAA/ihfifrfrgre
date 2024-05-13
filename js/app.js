@@ -1,3 +1,5 @@
+
+// пагинатор
 const pagination = document.querySelector('.pagination');
 
 let currentPage = 1;
@@ -84,7 +86,7 @@ allButton.addEventListener('click', () => {
 
 completedButton.addEventListener('click', () => {
   document.querySelectorAll('.item-poster').forEach(item => {
-    if (item.querySelector('.overlay span').innerText.includes('заверш')) {
+    if (item.dataset.category === 'завершено') {
       item.style.display = 'block';
     } else {
       item.style.display = 'none';

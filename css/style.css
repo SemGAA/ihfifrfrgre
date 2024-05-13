@@ -6,8 +6,12 @@
 a{
   text-decoration: none;
   color: #000000;
-  
 }
+li{
+  list-style: none;
+}
+
+
 main{
   margin-top: 60px;
 }
@@ -384,11 +388,10 @@ footer div ul{
   display: flex;
   justify-self: end;
   column-gap: 4vw;
+  text-decoration: none;
+
 }
 
-footer div ul li a{
-  text-decoration: none;
-}
 
 
 .filter-container {
